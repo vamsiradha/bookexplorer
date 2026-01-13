@@ -1,1 +1,0 @@
-  const book = books.find(b = === parseInt(req.params.id));

@@ -1,1 +1,19 @@
+{ 
+  "name": "bookexplorer", 
+  "version": "1.0.0", 
+  "description": "Book Explorer - Discover your next favorite book", 
+  "main": "server.js", 
+  "scripts": { 
+    "start": "node server.js", 
+    "dev": "node server.js" 
+  }, 
+  "keywords": ["books", "explorer", "reading"], 
+  "author": "You", 
+  "license": "MIT", 
+  "dependencies": { 
+    "express": "^4.18.2" 
+  }, 
+  "engines": { 
+    "node": ">=18.0.0" 
+  } 
 } 
