@@ -1,8 +1,20 @@
-{ 
-  "name": "bookexplorer", 
-  "version": "1.0.0", 
-  "main": "server.js", 
-  "scripts": { 
-    "start": "node server.js" 
-  } 
-} 
+{
+  "name": "book-explorer",
+  "version": "1.0.0",
+  "description": "Book Explorer with World of Books web scraping",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["books", "scraper", "worldofbooks", "explorer"],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/book-explorer.git"
+  }
+}
