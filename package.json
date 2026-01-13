@@ -1,0 +1,14 @@
+{ 
+  "name": "bookexplorer", 
+  "version": "1.0.0", 
+  "scripts": { 
+    "start": "node backend/server.js", 
+    "build": "echo 'Building...'", 
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"", 
+    "dev:backend": "cd backend && npm run dev", 
+    "dev:frontend": "cd frontend && npm run dev" 
+  }, 
+  "dependencies": { 
+    "concurrently": "^8.2.2" 
+  } 
+} 

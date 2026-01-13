@@ -25,7 +25,11 @@ const books = [
  
 // Routes 
 app.get('/api/health', (req, res) =
-  res.json({ status: 'OK', timestamp: new Date().toISOString() }); 
+  res.json({  
+    status: 'OK',  
+    timestamp: new Date().toISOString(), 
+    message: 'Book Explorer API v1.0', 
+  }); 
 }); 
  
 app.get('/api/categories', (req, res) =
@@ -45,6 +49,22 @@ app.get('/api/books/:id', (req, res) =
   } 
 }); 
  
+// Serve frontend if exists 
+app.use(express.static('public')); 
+ 
+// Root route 
+app.get('/', (req, res) =
+  res.json({ 
+    message: 'Welcome to Book Explorer API', 
+    endpoints: { 
+      health: '/api/health', 
+      categories: '/api/categories', 
+      books: '/api/books' 
+    } 
+  }); 
+}); 
+ 
 app.listen(PORT, () =
-  console.log(`Backend server running on port ${PORT}`); 
+  console.log(`?? Server running on port ${PORT}`); 
+  console.log(`?? API: http://localhost:${PORT}/api/health`); 
 }); 
