@@ -1,1 +1,1 @@
-5. Your app will be live! 
+ECHO is on.
